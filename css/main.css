@@ -10,6 +10,45 @@ For more info and more free Bootstrap 3 HTML themes, visit http://startbootstrap
 
 html, body {
     height: 100%;
+    font-family: 'Oswald',sans-serif;
+}
+
+header {
+    width: 400px;
+    border: 4px solid #000000;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0px;
+    background-color: white;
+}
+
+.quiz {
+    text-align:center;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+h1{
+text-align: center;
+font-size: 9em;
+ margin:0px;
+ padding: 0px; 
+ color: #176087;
+}
+
+h2 {
+    padding: 0px;
+    margin: 0px;
+    font-size: 3.8em;
+    color: #1D84B5;
+}
+
+h3{
+text-align: center;
+font-size: 2em;
+ margin:0px;
+ padding: 0px; 
+ color: #176087;
 }
 
 body {
@@ -97,14 +136,42 @@ body {
     color: #d14836;
 }
 
-/* Service Page Styles */
-.service-icon {
-    font-size: 50px;
+/* Results Page Styles */
+table {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+}
+#answers {
+    border-collapse: collapse;
+    width: 50%%;
+}
+
+#answers td, #answers th {
+    border: 1px solid #ddd;
+    padding: 24px;
+    text-align: center;
+}
+
+#answers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: white;
 }
 
 /* 404 Page Styles */
 .error-404 {
     font-size: 8em;
+}
+
+
+/* Home Page Styles */
+#googleForm {
+  width: 800px;
+  height: 2500px;
+  margin: 0 auto;
 }
 
 /* Pricing Page Styles */
