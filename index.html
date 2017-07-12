@@ -1,51 +1,242 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>
-<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>
-<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>
-<html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js"> <!--<![endif]-->
+<html lang="en">
+
 <head>
 
-    <!-- Meta-Information -->
-    <title>Water Cooler Trivia</title>
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="description" content="Water Cooler Trivia">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-    <!-- Vendor: Bootstrap Stylesheets http://getbootstrap.com -->
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>Water Cooler Trivia</title>
 
-    <!-- Our Website CSS Styles -->
-    <link rel="stylesheet" href="css/main.css">
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/landing-page.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- Temporary navbar container fix -->
+    <style>
+    .navbar-toggler {
+        z-index: 1;
+    }
+    
+    @media (max-width: 576px) {
+        nav > .container {
+            width: 100%;
+        }
+    }
+    </style>
 
 </head>
-<body ng-app="tutorialWebApp">
-<!--[if lt IE 7]>
-<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
-    your browser</a> to improve your experience.</p>
-<![endif]-->
 
-<!-- Our Website Content Goes Here -->
-<div ng-include='"templates/header.html"'></div>
-<div ng-view></div>
-<div ng-include='"templates/footer.html"'></div>
+<body>
 
-<!-- Vendor: Javascripts -->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <!-- Navigation
+    <nav class="navbar fixed-top navbar-toggleable-md navbar-light bg-faded">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarExample" aria-controls="navbarExample" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="container">
+            <a class="navbar-brand" href="#" style="color: rgb(23, 96, 135);">Water Cooler Trivia</a>
+            <div class="collapse navbar-collapse" id="navbarExample">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: rgb(29, 132, 181)">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: rgb(29, 132, 181);">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: rgb(29, 132, 181);">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    -->
+    <!-- Header -->
+    <header class="intro-header">
+        <div class="container">
+            <div class="intro-message">
+                <h1><strong>Water Cooler Trivia</strong></h1>
+                <h3>Weekly office trivia for you and your co-workers</h3>
+                <hr class="intro-divider">
+                <ul class="list-inline intro-social-buttons">
+                    <li class="list-inline-item" >
+                        <a href="https://goo.gl/forms/4L4KqBE6axDXMWsx2" class="btn btn-secondary btn-lg"><span class="network-name">Sign up as your Office Captain</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
 
-<!-- Vendor: Angular, followed by our custom Javascripts -->
-<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular.min.js"></script>
-<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular-route.min.js"></script>
+    <!-- Page Content -->
+    <section class="content-section-a">
 
-<!-- Our Website Javascripts -->
-<script src="js/main.js"></script>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h1 class="section-heading">How it works</h1>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <h2 style="text-align:center;">1. Sign up</h2>
+                                <img class="img-fluid" src="img/start.png" style="height:150px; margin-left:auto; margin-right:auto; margin-top: 25px; margin-bottom:25px;display:block;"alt="">
+                                <p class="lead" style="text-align:center;">Customize the question categories, types, and difficulty for your office</p>
+                            </div>
+                            <div class="col-lg-4">
+                                  <h2 style="text-align:center;">2. Answer trivia</h2>
+                                <img class="img-fluid" src="img/calendar.png" style="height:150px; margin-left:auto; margin-right:auto; margin-top: 25px; margin-bottom:25px;display:block;"alt="">
+                                <p class="lead" style="text-align:center;">Take the new quiz each Monday using only the old noggin</p>
+                            </div>
+                            <div class="col-lg-4">
+                                  <h2 style="text-align:center;">3. Get competitive</h2>
+                                <img class="img-fluid" src="img/trophy.png" style="height:150px; margin-left:auto; margin-right:auto; margin-top: 25px; margin-bottom:25px;display:block;"alt="">
+                                <p class="lead" style="text-align:center;">Compare your score to colleagues and track your team's overall leaderboard</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <section class="content-section-b">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5 push-lg-7">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h1 class="section-heading">Example Questions</h1>
+                    <p class="lead">Here's some example questions to get your brain juices flowing. And maybe your competitive juices too.</p>
+                </div>
+                <div class="col-lg-5 pull-lg-5">
+                    <img class="img-fluid" src="img/dog.jpg" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </section>
+    <!-- /.content-section-b -->
+
+    <section class="content-section-a">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h1 class="section-heading">Results Dashboard</h1>
+                    <p class="lead">Data visualization is very in. And what better data to visualize than the trivia rankings of your team?</p>
+                </div>
+                <div class="col-lg-5 offset-lg-2">
+                    <div id="columnchart_values" style="width: 900px; height: 400px;"></div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </section>
+    <!-- /.content-section-a -->
+
+    <aside class="banner">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 style="text-align:center; color: rgb(23, 96, 135)">Questions?</h2>
+                    <br>
+                    <h4 style="text-align:center; color: rgb(23, 96, 135)">Email collin@watercoolertrivia.com</h4>
+                </div>
+                
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </aside>
+    <!-- /.banner -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <ul class="list-inline">
+                <li class="list-inline-item">
+                    <a href="#">Top of page</a>
+                </li>
+                <li class="footer-menu-divider list-inline-item">&sdot;</li>
+                <li class="list-inline-item">
+                    <a href="http://j-archive.com/">Want more trivia?</a>
+                </li>
+            </ul>
+            <p class="copyright text-muted small">Copyright &copy; Water Cooler Trivia 2017. All Rights Reserved</p>
+        </div>
+    </footer>
+
+
+    <!-- Chart javascript for google charts -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+    google.charts.load("current", {packages:['corechart']});
+    google.charts.setOnLoadCallback(drawChart);
+    function drawChart() {
+      var data = google.visualization.arrayToDataTable([
+        ["Respondent", "Score", { role: "style" } ],
+        ["John", 3, "color: #1D84B5"],
+        ["George", 4, "color: #1D84B5"],
+        ["Paul", 6, "color: #1D84B5"],
+        ["Ringo", 8, "color: #176087"]
+      ]);
+
+      var view = new google.visualization.DataView(data);
+      view.setColumns([0, 1,
+                       { calc: "stringify",
+                         sourceColumn: 1,
+                         type: "string",
+                         role: "annotation" },
+                       2]);
+
+      var options = {
+        title: "Last Week's (Fake) Trivia Scores",
+        width: 600,
+        height: 400,
+        titleTextStyle: { color: 'black',
+        fontSize: 24},
+        backgroundColor: '#f8f8f8',
+        bar: {groupWidth: "95%"},
+        legend: { position: "none" },
+      };
+      var chart = new google.visualization.ColumnChart(document.getElementById("columnchart_values"));
+      chart.draw(view, options);
+  }
+  </script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/tether/tether.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
 </body>
+
 </html>
