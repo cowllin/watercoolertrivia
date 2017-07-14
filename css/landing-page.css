@@ -20,8 +20,24 @@ h6 {
     font-weight: 700;
 }
 
+h5 {
+    font-weight: 400;
+}
+
+h6 {
+    color:white;
+}
+h6:hover{
+    color: black;
+}
+
 h1 {color: rgb(23, 96, 135);
     font-weight: 1500;}
+
+.example_question {
+    display: inline;
+    padding: 3px;
+}
 
 .intro-header {
     padding-top: 2px;
@@ -75,6 +91,7 @@ h1 {color: rgb(23, 96, 135);
         width: 100%;
     }
 }
+
 
 .network-name {
     text-transform: uppercase;
