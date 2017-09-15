@@ -1,40 +1,3 @@
-/*!
- * Start Bootstrap - Landing Page (http://startbootstrap.com/template-overviews/landing-page)
- * Copyright 2013-2017 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-landing-page/blob/master/LICENSE)
- */
-
-/*!
-Styles for full screen background video demo
-*/
-/* =============================================================================
-  RESETS
-============================================================================= */
-html,
-body,
-div,
-h1,
-p,
-a,
-video {
-  margin: 0;
-  padding: 0;
-}
-
-/* =============================================================================
-  HTML, BODY
-============================================================================= */
-html,
-body {
-  height: 100%;
-}
-
-body {
-  font-size: 16px;
-  font-family: "Oxygen", sans-serif;
-  line-height: 1.5;
-}
-
 /* =============================================================================
   CONTENT
 ============================================================================= */
@@ -43,7 +6,6 @@ body {
   top: 10%;
   z-index: 2;
   margin: 0 auto;
-  max-width: 720px;
   text-align: center;
 }
 
@@ -54,19 +16,28 @@ body {
 }
 
 .content__teaser {
-  margin-bottom: 24px;
-  color: #595959;
-  font-size: 22px;
+    font-size: 3.25vw;
+    font-weight: bold;
+    color: #000;
+    margin: 0;
 }
 
 .content__cta {
-  display: inline-block;
-  margin: 0;
-  padding: 12px 48px;
-  color: #ff3c64;
-  font-size: 22px;
-  text-decoration: none;
-  border: solid 4px #ff3c64;
+     padding-left: 30px;
+    padding-right: 30px;
+    height: 60px;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 15px;
+        background: #1409ff;
+    color: #fff;
+        line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+        display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
 }
 
 /* =============================================================================
@@ -117,19 +88,7 @@ h6:hover{
 h1 {color: rgb(23, 96, 135);
     font-weight: 1500;}
 
-@font-face {
-    font-family: 'WctHeaderFont';
-    src: url("/fonts/HeaderFont-Regular.otf") format("opentype");
-}
 
-@font-face {
-    font-family: 'WctStandardFont';
-    font-weight: normal;
-    font-style: normal;
-    src: url("/fonts/Interface-Regular.otf") format("opentype"),
-         url("/fonts/Interface-Regular.woff") format("woff"),
-         url("/fonts/Interface-Regular.woff2") format("woff2");
-}
     
 .example_question {
     display: inline;
@@ -210,7 +169,6 @@ h1 {color: rgb(23, 96, 135);
 
 .section-heading {
     margin-bottom: 30px;
-    font-family: 'WctStandardFont';
 }
 
 .section-heading-spacer {
